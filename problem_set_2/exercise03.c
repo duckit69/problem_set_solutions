@@ -17,13 +17,13 @@ int main() {
     
     // Process Collatz sequence
     while (n != 1) {
-        if (n % 2 == 0) {
+        if (n % 2 == 0) 
             // Even: divide by 2
             n = n / 2;
-        } else {
+        else
             // Odd: multiply by 3 and add 1
             n = 3 * n + 1;
-        }
+        
         
         // Print current value
         printf("%d ", n);
