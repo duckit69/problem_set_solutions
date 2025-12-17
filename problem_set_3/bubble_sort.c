@@ -1,12 +1,10 @@
-// Optimized implementation of Bubble sort
 #include <stdbool.h>
 #include <stdio.h>
 
 int main(){
-    int arr[] = { 64, 34, 25, 12, 22, 11, 90 };
+    int arr[7] = { 64, 34, 25, 12, 22, 11, 90 };
     int n = 7;
     int i, j;
-
 
     bool swapped;
     for (i = 0; i < n - 1 && (i == 0 || swapped); i++) {
@@ -21,6 +19,7 @@ int main(){
         }
     }
 
+    printf("\n-----------***Sorted Array***------------\n");
 
     for (int i = 0; i < n; i++)
         printf("%d ", arr[i]);
